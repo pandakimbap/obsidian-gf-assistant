@@ -1,25 +1,14 @@
-# obsidian-react-starter
+# obsidian-GF-Assistant
 
-A starter template for creating an [Obsidian](https://obsidian.md/) plugin with [ReactJS](https://reactjs.org/).
+An [Obsidian](https://obsidian.md/) Plugin that utilizes AI to provide you with custom feedback and positive reminders based on your journal entries.
 
 ## Features
 
-This project comes preconfigured with [Typescript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), and [Rollup.js](https://www.rollupjs.org).
+Custom journal feedback that keeps you motivated and reminded of the things you care about.
 
-## Getting Started
+# Check out my socials if you have any questions
+ - [Linkedin](https://www.linkedin.com/in/saber-berriche-813472239/)
+ - [Instagram](https://www.instagram.com/anactualnerdjk/)
+ - [BuyMeAcoffee](https://buymeacoffee.com/pandahangry)
 
-Click "use this template" to create your own fork of this repo. Make sure to reference [the official sample plugin](https://github.com/obsidianmd/obsidian-sample-plugin) for information about how to get started with the Obsidian API and how to submit your plugin to the Community Plugin Gallery.
-
-```bash
-# for local development
-npm install
-npm run dev
-
-# for a production bundle
-npm install
-npm run build
-```
-
-## Stats
-
-The production output of this sample plugin is **~200 KB**.
+ 

@@ -1,29 +1,29 @@
-import babel from "@rollup/plugin-babel";
-import commonjs from "@rollup/plugin-commonjs";
-import replace from "@rollup/plugin-replace";
-import resolve from "@rollup/plugin-node-resolve";
-import typescript from "@rollup/plugin-typescript";
-import { env } from "process";
+// rollup.config.mjs
+import typescript from '@rollup/plugin-typescript';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import replace from '@rollup/plugin-replace';
 
 export default {
-  input: "src/index.ts",
+  input: 'src/index.ts',
   output: {
-    format: "cjs",
-    file: "main.js",
-    exports: "default",
+    file: 'main.js',
+    sourcemap: 'inline',
+    format: 'cjs',
+    exports: 'default'
   },
-  external: ["obsidian", "fs", "os", "path"],
+  external: ['obsidian'],
   plugins: [
-    typescript(),
-    resolve({
-      browser: true,
-    }),
     replace({
-      "process.env.NODE_ENV": JSON.stringify(env.NODE_ENV),
+      preventAssignment: true,
+      'process.env.NODE_ENV': JSON.stringify('production')
     }),
-    babel({
-      presets: ["@babel/preset-react", "@babel/preset-typescript"],
+    typescript({
+      tsconfig: './tsconfig.json',
+      sourceMap: true,
+      inlineSources: true
     }),
-    commonjs(),
-  ],
+    nodeResolve(),
+    commonjs()
+  ]
 };

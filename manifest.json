@@ -1,10 +1,10 @@
 {
-  "id": "react-starter",
-  "name": "React Starter",
-  "description": "Obsidian + ReactJS",
+  "id": "gf-assistant",
+  "name": "Girlfriend Assistant",
+  "description": "Your AI-powered journaling girlfriend assistant within Obsidian.",
   "version": "0.0.0",
-  "author": "Liam Cain",
-  "authorUrl": "https://github.com/liamcain/",
+  "author": "Saber Berriche AKA Panda",
+  "authorUrl": "https://www.linkedin.com/in/saber-berriche-813472239/",
   "isDesktopOnly": true,
   "minAppVersion": "0.10.8"
 }
