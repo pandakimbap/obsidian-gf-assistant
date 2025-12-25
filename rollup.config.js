@@ -5,7 +5,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
 
 export default {
-  input: 'src/index.ts',
+  input: 'src/main.ts',
   output: {
     file: 'main.js',
     sourcemap: 'inline',

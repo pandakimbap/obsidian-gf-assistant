@@ -10,7 +10,7 @@
     "noImplicitAny": true,
     "moduleResolution": "bundler",
     "importHelpers": true,
-    "lib": ["dom", "esnext"]
+    "lib": ["dom", "ESNext"]
   },
   "include": ["**/*.ts", "**/*.tsx"]
 }
